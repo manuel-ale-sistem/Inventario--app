@@ -40,6 +40,7 @@ def generar_pdf_comodato(nuevo, accesorios_seleccionados):
     BASE_DIR = os.path.dirname(__file__)
     LOGO_PATH = os.path.join(BASE_DIR, "..", "assets", "heineken_logo.png")
 
+   if os.path.exists(LOGO_PATH):
     c.drawImage(LOGO_PATH, x_logo, y_logo, width=logo_width, height=logo_height, mask="auto")
 
     # Título
