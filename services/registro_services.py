@@ -2,7 +2,7 @@
 import sqlite3
 import pandas as pd
 
-DB_PATH = "data/registro.db"
+DB_PATH = "registro.db"
 
 COLUMNAS = [
     "Tipo", "Marca", "Modelo", "Serie",
@@ -17,7 +17,7 @@ COLUMNAS = [
 import os
 
 def get_connection():
-    return sqlite3.connect("/data/registro.db", check_same_thread=False)
+    return sqlite3.connect(DB_PATH, check_same_thread=False)
 
 # ---------- INICIALIZAR BD ----------
 def inicializar_bd():
