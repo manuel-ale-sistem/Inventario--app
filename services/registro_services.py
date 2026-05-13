@@ -17,9 +17,6 @@ COLUMNAS = [
 import os
 
 def get_connection():
-    # Crear carpeta si no existe
-    os.makedirs("/data", exist_ok=True)
-
     return sqlite3.connect("/data/registro.db", check_same_thread=False)
 
 # ---------- INICIALIZAR BD ----------
